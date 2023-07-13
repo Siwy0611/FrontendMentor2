@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 98vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, hsl(221, 100%, 96%), hsl(0, 0%, 100%));
+  font-family: "Hanken Grotesk";
+}
+.card {
+  display: flex;
+  width: 540px;
+  height: 380px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  box-shadow: 21px 27px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.card__left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    hsl(252, 100%, 67%) -20%,
+    hsl(241, 81%, 54%) 100%
+  );
+  color: white;
+  border-radius: 25px;
+  padding: 15px;
+}
+.card__left-section__circle {
+  background: linear-gradient(
+    to top,
+    hsla(241, 72%, 46%, 0) 10%,
+    hsla(256, 72%, 46%, 1) 90%
+  );
+  border-radius: 50%;
+  height: 150px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card__left-section__circle p:first-child {
+  font-size: 50px;
+  font-weight: 800;
+}
+.card__left-section h1 {
+  font-size: 20px;
+  color: hsl(241, 100%, 89%);
+}
+.card__left-section p:nth-child(3) {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+.card__left-section p:last-child {
+  color: hsl(241, 100%, 89%);
+  font-size: 13px;
+  width: 76%;
+}
+
+p {
+  text-align: center;
+}
+.card__right-section {
+  flex: 1;
+  font-size: 17;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card__right-section__heading {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.card__right-section__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  background-color: hsl(0, 100%, 98%);
+  padding: 7px 10px;
+  color: hsl(0, 100%, 67%);
+}
+.card__right-section__label:nth-of-type(2) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 98%);
+}
+.card__right-section__label:nth-of-type(3) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 98%);
+}
+.card__right-section__label:nth-of-type(4) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 98%);
+}
+.card__right-section__label__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  margin: 5px;
+}
+.card__right-section__label__rate {
+  color: hsl(224, 30%, 27%);
+}
+.card__right-section__button {
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin: 20px 0px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+
+  cursor: pointer;
+}
+span {
+  opacity: 0.6;
+}
+@media (max-width: 575px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+}
